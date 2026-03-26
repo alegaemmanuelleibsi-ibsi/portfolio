@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Engr. Edwin Astorga</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "#1e293b",
+              surface: "#f8f9fa",
+              muted: "#6b7280",
+              accent: "#334155",
+              border: "#e2e8f0",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-surface font-sans text-primary antialiased">
+    <!-- ========== NAVBAR ========== -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm border-b border-border z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="text-lg font-semibold tracking-tight text-primary"
+        >
+          Engr<span class="text-muted font-light">.Edwin</span>
+        </a>
+
+        <!-- Nav Links (Desktop) -->
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <li><a href="index.html" class="nav-link active-link">Home</a></li>
+          <li><a href="background.html" class="nav-link">Background</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-border px-6 py-4"
+      >
+        <ul class="flex flex-col gap-4 text-sm font-medium">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="background.html" class="nav-link">Background</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ========== END NAVBAR ========== -->
+
+    <!-- ========== HERO / HOME SECTION ========== -->
+    <section
+      id="home"
+      class="hero-section min-h-screen flex items-center pt-24"
+    >
+      <div class="max-w-6xl mx-auto px-6 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- LEFT: Text Content -->
+          <div class="flex flex-col gap-6">
+            <!-- Badge -->
+            <span
+              class="inline-flex items-center gap-2 text-xs font-medium text-muted uppercase tracking-widest"
+            >
+              <span class="w-6 h-px bg-muted"></span>
+              Professional Electronics Engineer
+            </span>
+
+            <!-- Name -->
+            <div>
+              <h1
+                class="text-4xl md:text-5xl font-bold text-primary leading-tight"
+              >
+                <span class="text-accent">Engr. Edwin Londonio Astorga</span>
+              </h1>
+              <p
+                class="mt-2 text-sm font-medium text-muted tracking-widest uppercase"
+              >
+                PECE, DM
+              </p>
+            </div>
+
+            <!-- Tagline -->
+            <p class="text-muted text-base md:text-lg leading-relaxed max-w-md">
+              is a distinguished Filipino Professional Electronics Engineer,
+              Sustainability Consultant and Community Leader. Specializes in
+              Environmental, Social, and Governance (ESG) consulting,
+              sustainability management and emerging technologies, with a strong
+              focus on smart cities and green engineering.
+            </p>
+
+            <!-- Divider -->
+            <div class="w-12 h-px bg-border"></div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="assets/cv.pdf"
+                download
+                class="px-6 py-3 bg-primary text-white text-sm font-medium rounded-sm hover:bg-accent transition-colors duration-200"
+              >
+                Download CV
+              </a>
+              <a
+                href="#"
+                class="px-6 py-3 border border-primary text-primary text-sm font-medium rounded-sm hover:bg-primary hover:text-white transition-colors duration-200"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+          <!-- END LEFT -->
+
+          <!-- RIGHT: Profile Photo Container -->
+          <div class="flex justify-center md:justify-end">
+            <div class="relative">
+              <!-- Decorative background block -->
+              <div
+                class="absolute -top-4 -left-4 w-full h-full bg-border rounded-sm z-0"
+              ></div>
+
+              <!-- Photo container -->
+              <div
+                class="relative z-10 w-72 h-80 md:w-80 md:h-96 rounded-sm overflow-hidden border border-border shadow-md"
+              >
+                <img
+                  src="/assets/images/profile.jpg"
+                  alt="Engr. Edwin Londonio Astorga"
+                  class="w-full h-full object-cover object-top"
+                  onerror="
+                    this.onerror = null;
+                    this.src = '';
+                    this.style.display = 'none';
+                  "
+                />
+                <!-- Fallback if image not found -->
+                <div
+                  id="photo-fallback"
+                  class="absolute inset-0 bg-gray-200 flex flex-col items-center justify-center gap-2"
+                >
+                  <svg
+                    class="w-16 h-16 text-gray-300"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5.121 17.804A9 9 0 1118.88 6.196M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <span class="text-xs text-gray-400">Your Photo Here</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END RIGHT -->
+        </div>
+      </div>
+    </section>
+    <!-- ========== END HERO ========== -->
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

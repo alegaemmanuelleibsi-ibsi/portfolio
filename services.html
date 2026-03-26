@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background | Engr. Edwin Astorga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "sans-serif"] },
+            colors: {
+              primary: "#1e293b",
+              surface: "#f8f9fa",
+              muted: "#6b7280",
+              accent: "#334155",
+              border: "#e2e8f0",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-surface font-sans text-primary antialiased">
+    <!-- NAVBAR -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm border-b border-border z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a
+          href="index.html"
+          class="text-lg font-semibold tracking-tight text-primary"
+        >
+          ELA<span class="text-muted font-light">.eng</span>
+        </a>
+        <ul
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-muted"
+        >
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="background.html" class="nav-link active-link"
+              >Background</a
+            >
+          </li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-border px-6 py-4"
+      >
+        <ul class="flex flex-col gap-4 text-sm font-medium text-muted">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="background.html" class="nav-link">Background</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CONTENT PLACEHOLDER -->
+    <main class="min-h-screen flex items-center justify-center pt-20">
+      <p class="text-muted text-sm">Background page — coming soon</p>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

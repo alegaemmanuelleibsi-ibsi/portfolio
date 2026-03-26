@@ -1,0 +1,61 @@
+/* ── Smooth scrolling ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Navbar link styles ── */
+.nav-link {
+  position: relative;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: #1e293b;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active-link {
+  color: #1e293b;
+}
+
+.nav-link:hover::after,
+.nav-link.active-link::after {
+  width: 100%;
+}
+
+/* ── Hero background image with duotone overlay ── */
+.hero-section {
+  position: relative;
+  background-image: url("../assets/images/background-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Medium overlay — light gray + white duotone */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(248, 249, 250, 0.82) 0%,
+    rgba(226, 232, 240, 0.75) 100%
+  );
+  z-index: 0;
+}
+
+/* Make sure hero content sits above the overlay */
+.hero-section > * {
+  position: relative;
+  z-index: 1;
+}
