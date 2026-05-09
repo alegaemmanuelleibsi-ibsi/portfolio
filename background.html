@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
       tailwind.config = {
@@ -37,49 +41,36 @@
 
   <body class="font-sans text-primary antialiased">
     <div id="navbar-placeholder"></div>
-    <!-- ========== PAGE HERO ========== -->
-    <!-- BG image: assets/images/bg-hero.jpg
-         CSS fallback: diagonal stripe + dark navy radial gradient -->
-    <section class="page-hero pt-28 pb-10">
-      <div class="page-hero-abstract"></div>
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="max-w-xl flex flex-col gap-3">
-          <span
-            class="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest"
-            class="hero-eyebrow-rule"
-            style="color: rgb(31, 144, 63)"
-          >
-            <span class="hero-eyebrow-rule"></span>
-            Professional Journey
-          </span>
-          <h1
-            class="font-display text-4xl md:text-5xl font-light text-white leading-tight"
-          >
-            Background &amp;
-            <span style="color: rgb(31, 144, 63); font-style: italic"
-              >Credentials</span
-            >
+    <!-- ========== PAGE HERO — REDESIGNED ========== -->
+    <section class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-grid"></div>
+
+      <div class="page-hero-inner">
+        <div class="page-hero-content">
+          <!-- Eyebrow -->
+          <div class="page-hero-eyebrow">
+            <span class="page-hero-eyebrow-line"></span>
+            <span class="page-hero-eyebrow-text">Professional Journey</span>
+          </div>
+
+          <!-- Main heading -->
+          <h1 class="page-hero-heading">
+            Background &amp;<br />
+            <em class="page-hero-heading-em">Credentials</em>
           </h1>
-          <p
-            class="text-sm font-light leading-relaxed"
-            style="color: rgba(255, 255, 255, 0.5)"
-          >
-            A record of academic excellence, continuous learning, and
-            multidisciplinary expertise spanning engineering, sustainability,
-            and innovation management.
-          </p>
-        </div>
-        <div
-          class="mt-5 flex items-center gap-2 text-xs"
-          style="color: rgba(255, 255, 255, 0.3)"
-        >
-          <a href="index.html" class="hover:text-white transition-colors"
-            >Home</a
-          >
-          <span>/</span>
-          <span style="color: rgba(255, 255, 255, 0.6)">Background</span>
+
+          <!-- Breadcrumb -->
+          <div class="page-hero-breadcrumb">
+            <a href="index.html" class="page-hero-breadcrumb-link">Home</a>
+            <span class="page-hero-breadcrumb-sep">/</span>
+            <span class="page-hero-breadcrumb-current">Background</span>
+          </div>
         </div>
       </div>
+
+      <div class="page-hero-bottom-fade"></div>
     </section>
     <!-- ========== END PAGE HERO ========== -->
 

@@ -515,7 +515,7 @@ html {
   margin-top: 6px;
   font-size: 0.875rem;
   max-width: 24rem;
-  color: #50504f;
+  color: #01012c;
 }
 
 /* ============================================================
@@ -536,7 +536,7 @@ html {
 }
 .affil-role {
   font-size: 0.75rem;
-  color: #3c3c3c;
+  color: #060124;
 }
 
 /* ============================================================
@@ -753,7 +753,7 @@ html {
 }
 .benefit-text p {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.856);
   line-height: 1.4;
   margin: 0;
 }
