@@ -122,7 +122,7 @@ body {
      — something with NO heavy tones so the section reads light.
      Ideal: "assets/images/bg-light-sage-texture.jpg"
      or "assets/images/bg-grid-light.jpg" */
-  background-image: url("../assets/images/expertise.jpg");
+  background-image: url("../assets/images/background4-bg.jpg");
   background-size: cover;
   background-position: center;
   border-top: none;
@@ -160,9 +160,7 @@ body {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #2f6352;
-  background: rgba(47, 99, 82, 0.08);
-  border: 1px solid rgba(47, 99, 82, 0.22);
-  padding: 3px 12px;
+  padding: 0px 2px;
   border-radius: 20px;
 }
 
@@ -1771,7 +1769,7 @@ body {
 
 .page-hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: flex-end; /* push content to bottom */
   justify-content: center;
@@ -1782,14 +1780,14 @@ body {
 }
 /* ── Background image ── */
 .page-hero-bg {
-  position: absolute;
-  inset: 0;
-  background-image: url("../assets/images/esg.jpg");
+  display: flex;
+  background-image: url("../assets/images/background-bg.jpg");
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
   z-index: 0;
   animation: heroBgDrift 18s ease-in-out infinite alternate;
+  min-height: 280px;
 }
 
 @keyframes heroBgDrift {
@@ -1865,7 +1863,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #16c060;
+  color: #ffffff;
 }
 
 /* ── Main heading — Inter kept, large and bold ── */

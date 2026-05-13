@@ -39,7 +39,11 @@ body {
   padding-top: 80px;
   padding-bottom: 48px;
   overflow: hidden;
-  background: #ffffff;
+  background-image: url("../assets/images/background4-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .about-hero::before,
