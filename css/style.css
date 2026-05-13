@@ -127,8 +127,8 @@ html {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(240, 253, 244, 0.612) 0%,
-    rgba(209, 250, 229, 0.353) 100%
+    rgba(240, 253, 244, 0.755) 0%,
+    rgba(209, 250, 229, 0.584) 100%
   );
   z-index: 0;
 }

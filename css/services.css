@@ -26,13 +26,13 @@
    ========================================================= */
 .services-hero {
   min-height: 480px; /* slightly taller than before */
-  display: flex;
   align-items: center;
   justify-content: center;
   background-image: url("../assets/images/services4.png");
   background-size: cover;
   background-position: center 30%; /* shifted down from center */
   background-repeat: no-repeat;
+  padding-top: 15rem;
 }
 .services-hero::before {
   content: "";
